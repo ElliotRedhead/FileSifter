@@ -6,7 +6,6 @@ def prompt_user():
     directory = input(
         "Enter path of directory to inspect (or leave blank for directory picker): "
     )
-    print(directory)
     if directory == "":
         directory = askdirectory()
     if not os.path.exists(directory) or not os.path.isdir(directory):
